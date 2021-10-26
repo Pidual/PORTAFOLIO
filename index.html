@@ -1,21 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spidual</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+        .header {
+            padding: 10px;
+            text-align: center;
+            background: #102542;
+            color: whitesmoke;
+        }
+
+        .header h1 {
+            font-size: 60px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: auto;
+            color: #F7D002;
+            letter-spacing: 20px;
+        }
+
+        .header h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            margin-top: -50px;
+        }
+
+        .header p {
+            font-family: 'Permanent Marker', cursive;
+            color: #F7D002;
+            letter-spacing: 5px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            /* Hide overflow */
+            background-color: #333;
+            /* Dark background color */
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            /* Make sure that the links stay side-by-side */
+            display: block;
+            /* Change the display to block, for responsive reasons (see below) */
+            color: white;
+            /* White text color */
+            text-align: center;
+            /* Center the text */
+            padding: 14px 20px;
+            /* Add some padding */
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        /* Right-aligned link */
+        .navbar a.rigth {
+            float: right;
+            /* Float a link to the right */
+        }
+
+        /* Change color on hover/mouse-over */
+        .navbar a:hover {
+            background-color: #F7D002;
+            /* Grey background color */
+            color: black;
+            /* Black text color */
+        }
+
+        /* position ="relative";
+        width: 1440px;
+        height: 1024px;
+
+        background: #D7F9F1; */
+
+        /*paleta de colores
+        102542 Azul
+        7CB518 verde
+        D7F9F1 blanco
+        F6AE2D amarillo     
+
+        */
+    </style>
+
 </head>
+
 <body>
-    <h1> Spidual aka Carlos Lozano</h1>
-    <h2>2021:</h2>
-    <Img width="150px" height="200px" src="./images/2021CuartoSemestre.jpg"></Img>
-    <p> En busca de ser programador full stack empezando desde front end luego llendo al back end, aun no se nada realmente un poco 
-        de html un poco de css y un poco de java.
-    </p>
-    <h2> 2022: </h2>
-    <h2> Progreso: 2023</h2>
-    <p> OG so proud of me </p>
-    
+    <div class="header">
+        <img src="https://dev.java/assets/images/java-logo-vert-blk.png" alt="yo">
+        <h1> SPIDUAL </h1>
+        <h2>CARLOS LOZANO</h2>
+        <p> FRONT end to back end</p>
+    </div>
+    <div class="">
+
+    </div>
+    <div class="navbar">
+        <a href="#">Link UNo</a>\
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+        <a href="#" class="right">El pepe</a>
+    </div>
+
+    <div></div>
+
 </body>
+
+/* poner otro body para hacer scroll down */
+
 </html>
