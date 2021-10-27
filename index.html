@@ -10,8 +10,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+        h1,
+        h2,
+        p,
+        a {
+            font-family: 'Roboto', sans-serif;
+        }
+
         .header {
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             background: #102542;
             color: whitesmoke;
@@ -62,7 +69,7 @@
         }
 
         /* Right-aligned link */
-        .navbar a.rigth {
+        .navbar a.right {
             float: right;
             /* Float a link to the right */
         }
@@ -75,6 +82,63 @@
             /* Black text color */
         }
 
+        /* Ensure proper sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Column container */
+        .primera-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            /* Set the width of the sidebar */
+            background-color: #F6AE2D;
+            /* Grey background color */
+            padding: 20px;
+            /* Some padding */
+        }
+
+        .side h1,
+        img {
+            margin-top: -15px;
+        }
+
+
+        /* Main column */
+        .main {
+            flex: 70%;
+            /* Set the width of the main content */
+            background-color: #D7F9F1;
+            /* White background color */
+            padding: 20px;
+            /* Some padding */
+        }
+
+        .main h2 {
+            margin-top: -10px;
+        }
+
+        .footer {
+            padding: 20px;
+            /* Some padding */
+            text-align: center;
+            /* Center text*/
+            background: #ddd;
+            /* Grey background */
+        }
+
+        #coomingSoon{
+          display: block;
+          margin: auto;
+        }
+
+        .dlc{
+            background-color: #333;
+        }
         /* position ="relative";
         width: 1440px;
         height: 1024px;
@@ -99,21 +163,34 @@
         <h2>CARLOS LOZANO</h2>
         <p> FRONT end to back end</p>
     </div>
-    <div class="">
 
-    </div>
     <div class="navbar">
-        <a href="#">Link UNo</a>\
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
+        <a href="#about-me">ABOUT ME</a>\
+        <a href="#">PREVIUS WORK</a>
+        <a href="#">EXPERIENCIA</a>
         <a href="#">Link 5</a>
-        <a href="#" class="right">El pepe</a>
+        <a href="https://wa.me/573124632164" target="blank" class="right">WhatsApp</a>
     </div>
 
-    <div></div>
+    <div id="about-me" class="primera-row">
+        <div class="side">
+            <h1>CARLOS LOZANO</h1>
+            <img id="about-me" src="./images/image 2.png" alt="carlos lozano 2020">
+        </div>
+        <div class="main">
+            <h2> Estudiante de ingeniera de sistemas en la universidad pedagogica y tecnologica de colombia y esta
+                pagina
+                web es mi portafolio. </h2>
+        </div>
+    </div>
+    <div class="dlc">
+       <img id="coomingSoon"src="./images/coomingSoon.png" alt="">
+
+    </div>
+    <div class="footer">
+        <h2>ESTO ES DLC COOMING SOON</h2>
+    </div>
 
 </body>
-
-/* poner otro body para hacer scroll down */
 
 </html>
